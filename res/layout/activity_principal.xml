@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app"
+    android:gravity="bottom"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Principal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/deportes_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/des_deportes"
+                android:src="@drawable/deportes" />
+
+            <ImageView
+                android:id="@+id/actrec_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/des_actrec"
+                android:src="@drawable/recreativas" />
+
+            <ImageView
+                android:id="@+id/entrenamiento_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/desc_entrenamiento"
+                android:src="@drawable/entranamiento" />
+
+            <ImageView
+                android:id="@+id/rutina_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/des_rutina"
+                android:src="@drawable/mi_rutina" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/deportistas_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/desc_deportistas"
+                android:src="@drawable/deportistas" />
+
+            <ImageView
+                android:id="@+id/compartir_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/desc_compartir"
+                android:src="@drawable/compartir" />
+
+            <ImageView
+                android:id="@+id/perfil_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/desc_perfil"
+                android:src="@drawable/perfil" />
+
+            <ImageView
+                android:id="@+id/eventos_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/desc_eventos"
+                android:src="@drawable/eventos" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
