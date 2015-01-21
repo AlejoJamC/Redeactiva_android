@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.foxdigitalst.redeactiva"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <permission
+        android:name="co.foxdigitalst.redeactiva.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <permission
+        android:name="co.foxdigitalst.redeactiva.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="co.foxdigitalst.redeactiva.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".ApplicationGlobal"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAtJqzdmVjeLrX7WpRyN1_1bOiu3oOBSJY" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Principal"
+            android:label="@string/title_activity_deportes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Deportes"
+            android:label="@string/title_activity_deportes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DetalleDeporte"
+            android:label="@string/title_activity_detalle_deporte"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Galerias"
+            android:label="@string/title_activity_galerias"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Reglamento"
+            android:label="@string/title_activity_reglamento"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Federaciones"
+            android:label="@string/title_activity_federaciones"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Recreativas"
+            android:label="@string/title_activity_recreativas"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DetalleRecreativa"
+            android:label="@string/title_activity_detalle_recreativa"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GaleriasRecreacion"
+            android:label="@string/title_activity_gelerias_recreacion"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ReglamentoRecreativa"
+            android:label="@string/title_activity_reglamento_recreativa"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Entrenamiento"
+            android:label="@string/title_activity_entrenamiento"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Rutinas"
+            android:label="@string/title_activity_rutinas"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NuevaRutina"
+            android:label="@string/title_activity_nueva_rutina"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EditarRutina"
+            android:label="@string/title_activity_editar_rutina"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Historias"
+            android:label="@string/title_activity_historias"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NuevaHistoria"
+            android:label="@string/title_activity_nueva_historia"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Eventos"
+            android:label="@string/title_activity_eventos"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapaEventos"
+            android:label="@string/title_activity_mapa_eventos"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Perfil"
+            android:label="@string/title_activity_perfil"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name=".Registro"
+            android:label="@string/title_activity_registro" >
+        </activity>
+        <activity
+            android:name=".Recovery"
+            android:label="@string/title_activity_recovery" >
+        </activity>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+                <category android:name="co.foxdigitalst.redeactiva" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Entrenamiento_menu"
+            android:label="@string/title_activity_entrenamiento_menu" >
+        </activity>
+        <activity
+            android:name=".Frases"
+            android:label="@string/title_activity_frases" >
+        </activity>
+    </application>
+
+</manifest>
