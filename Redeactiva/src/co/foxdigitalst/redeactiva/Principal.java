@@ -1,12 +1,14 @@
 package co.foxdigitalst.redeactiva;
 
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.app.Activity;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
 
 public class Principal extends Activity {
 
@@ -134,5 +136,46 @@ public class Principal extends Activity {
 	    startActivity(i);
 	    finish();
 	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// TODO Auto-generated method stub
+		super.onCreateOptionsMenu(menu);
+		crearMenu(menu);
+		return true;
+	}
+
+	private void crearMenu(Menu menu) {
+		// TODO Auto-generated method stub
+		MenuItem menu1 = menu.add(0,0,0,"Acerca de");{
+			menu1.setIcon(R.drawable.get_info);
+			menu1.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+		}
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// TODO Auto-generated method stub
+		return menuSeleccionItem(item);
+	}
+
+	private boolean menuSeleccionItem(MenuItem item) {
+		// TODO Auto-generated method stub
+		switch (item.getItemId()) {
+		case 0:
+			Intent in1 = new Intent(Principal.this, About.class);
+			startActivity(in1);
+			break;
+
+		default:
+			break;
+			
+		}
+		
+		
+		return false;
+	}
+	
+	
 	
 }

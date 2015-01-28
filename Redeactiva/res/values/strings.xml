@@ -85,5 +85,11 @@
     <string name="descripcion_perfil">En esta sección usted podrá modificar su contraseña.</string>
     <string name="confirm_pass">"Ingrese nuevamente su contraseña para confirmar: "</string>
     <string name="salir_str">Cerrar Sesión</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_about">Acerca de</string>
+    <string name="app_title">Redeactiva</string>
+    <string name="version">V. 1.0</string>
+    <string name="coldeportes">Coldeportes</string>
+    <string name="copy">&#169; 2015 - Derechos reservados. Tenga en cuenta que esta aplicación requiere acceso a internet y puede consumir recursos de su plan de datos.</string>
 
 </resources>

@@ -24,7 +24,7 @@ public class ApplicationGlobal extends Application {
 		super.onCreate();
 		Parse.initialize(this, "zBwe2MB38Zsn3F2zRL29NYJiXtalKZ8rsB1IEd0j", "5YqqoUsMY96M9d8OTeuC9nY19LChMKqRgkI35IF0");
 		
-		PushService.setDefaultPushCallback(this, MainActivity.class);
+		PushService.setDefaultPushCallback(this, Splash.class);
         //PushService.subscribe(this, "EventisiteAndroid", Splash.class);
         ParseInstallation.getCurrentInstallation().saveInBackground();
 	}
